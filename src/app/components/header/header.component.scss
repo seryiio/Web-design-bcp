@@ -1,0 +1,301 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    .header__row1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: rgb(0, 48, 176);
+        background: linear-gradient(90deg, rgba(0, 48, 176, 1) 0%, rgba(9, 9, 121, 1) 44%, rgba(243, 52, 72, 1) 100%);
+        color: white;
+
+        .header__row1--content {
+            margin: 1em auto;
+        }
+    }
+
+    .header__row2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f2f9fe;
+        width: 100%;
+
+        .header__row2--content {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin: .5em auto;
+
+            .entity {
+
+                ul {
+                    display: flex;
+                    gap: 1em;
+
+                    li {
+                        list-style: none;
+                    }
+
+                    .entity-personas {
+                        border-bottom: 1px solid #ff7800;
+                    }
+                }
+            }
+
+            .language {
+                ul {
+                    display: flex;
+                    gap: 1em;
+
+                    li {
+                        list-style: none;
+                    }
+
+                    .language-espanol {
+                        border-bottom: 1px solid #ff7800;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .header__row3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0px 5px 5px rgba(113, 113, 113, 0.1);
+
+        .header__row3--content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: .5em auto;
+
+            .header__row3--left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .navegation {
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: max-content;
+                        list-style: none;
+                        padding: .5em 1em .5em 1em;
+                        border-radius: 16px;
+                        transition: background-color .25s linear;
+                        cursor: pointer;
+                        gap: .5em;
+                    }
+
+                    li:hover {
+                        background-color: #f2f9fe;
+                    }
+                }
+
+                .search {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: .5em;
+                    border-radius: 16px;
+                    padding: .5em 1em .5em 1em;
+                    transition: background-color .25s linear;
+                }
+
+                .search:hover {
+                    background-color: #f2f9fe;
+                    cursor: pointer;
+                }
+
+            }
+
+            .header__row3--right {
+                display: flex;
+
+                .financial-services {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1em;
+
+                    .open-account {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 16px;
+                        padding: .5em 1em .5em 1em;
+                        gap: .5em;
+                        border: 1px solid #989da0;
+                    }
+
+                    .internet-bank {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: .5em;
+                        border-radius: 16px;
+                        padding: .5em 1em .5em 1em;
+                        background-color: #ff7800;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header__mobile {
+    display: none;
+
+    .header__mobile--row1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0px 5px 5px rgba(113, 113, 113, 0.1);
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: .5em auto;
+
+            .content-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .navegation {
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: max-content;
+                        list-style: none;
+                        padding: .5em 1em .5em 1em;
+                        border-radius: 16px;
+                        transition: background-color .25s linear;
+                        cursor: pointer;
+                        gap: .5em;
+                    }
+
+                    li:hover {
+                        background-color: #f2f9fe;
+                    }
+                }
+
+                .search {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: .5em;
+                    border-radius: 16px;
+                    padding: .5em 1em .5em 1em;
+                    transition: background-color .25s linear;
+                }
+
+                .search:hover {
+                    background-color: #f2f9fe;
+                    cursor: pointer;
+                }
+
+            }
+
+            .content-right {
+                display: flex;
+                gap: 1em;
+
+                .financial-services {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: .25em;
+
+                    .open-account {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 16px;
+                        padding: .5em 1em .5em 1em;
+                        gap: .5em;
+                        border: 1px solid #989da0;
+                    }
+
+                    .internet-bank {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: .5em;
+                        border-radius: 16px;
+                        padding: .5em 1em .5em 1em;
+                        background-color: #ff7800;
+                        color: white;
+                    }
+                }
+
+                .menu {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header__row1--content {
+        max-width: 1200px;
+    }
+    .header__row2--content {
+        max-width: 1200px;
+    }
+    .header__row3--content {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .header {
+        display: none;
+    }
+
+    .header__mobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    .header__mobile {
+        display: flex;
+    }
+}
